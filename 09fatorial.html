@@ -6,17 +6,18 @@
 
     //ENTRADA
     function fatorial(numero) {
-        if (inteiro == 1) {
+        if (numero == 1) {
             return 1;
         } else {
-            return inteiro * fatorial(inteiro - 1);
+            return numero * fatorial(numero - 1);
         }
     }
    
 
     //PROCESSAMENTO
     let inteiro = Number(prompt(`Informe um número inteiro:`))
-    fatorial(inteiro);
+    let resultado = fatorial(inteiro);
+    alert(`O fatorial desse número é: ` + resultado)
 
     //SAÍDA
 
