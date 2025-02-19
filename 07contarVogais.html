@@ -7,10 +7,21 @@
     */
 
     //ENTRADA
-    
-    //PROCESSAMENTO
-  
-
+    function contarvogais(string) {
+        const vogais = ['a', 'e', 'i', 'o', 'u'];
+        let contador = 0;
+        string = string.toLowerCase();
+   
+    for (let i = 0; i < string.length; i++) {
+            if (vogais.includes(string[i])) {
+                contador++;
+            }
+        }
+        return contador;
+    }
     //SAÍDA
+    let informacao = prompt("Informe uma string:");
+    let resultado = contarvogais(informacao);
+    alert("A quantidade de vogais na string é: " + resultado);
 
 </script>
